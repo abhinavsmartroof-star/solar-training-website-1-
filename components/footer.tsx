@@ -8,40 +8,16 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6 text-primary-foreground"
-                >
-                  <path
-                    d="M12 2L2 7L12 12L22 7L12 2Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M2 17L12 22L22 17"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M2 12L12 17L22 12"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+            <div className="flex items-center gap-3">
+              {/* Logo Image (same as Header) */}
+              <img
+                src="/apple-icon.webp"
+                alt="SmartRoof Solar Solutions"
+                className="h-10 w-10 object-contain"
+              />
               <div className="flex flex-col">
                 <span className="text-lg font-bold leading-none tracking-tight">
-                  Smartroof
+                  SmartRoof
                 </span>
                 <span className="text-xs text-muted-foreground">
                   Solar Solutions
@@ -151,7 +127,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
           <p>
-            &copy; {new Date().getFullYear()} Smartroof Solar Solutions. All rights reserved.
+            &copy; {new Date().getFullYear()} SmartRoof Solar Solutions. All rights reserved.
           </p>
         </div>
       </div>
