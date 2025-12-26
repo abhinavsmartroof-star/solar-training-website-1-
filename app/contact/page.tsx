@@ -75,10 +75,10 @@ export default function ContactPage() {
                 </div>
                 <h3 className="mb-2 font-semibold">Email Us</h3>
                 <a
-                  href="mailto:info@smartroofsolar.com"
+                  href="mailto:enquiry@gosmartroof.com"
                   className="text-lg font-bold text-primary hover:underline break-all"
                 >
-                  info@smartroofsolar.com
+                  enquiry@gosmartroof.com
                 </a>
                 <p className="mt-2 text-sm text-muted-foreground">We'll respond within 24 hours</p>
               </CardContent>

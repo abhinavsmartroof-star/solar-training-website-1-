@@ -42,14 +42,14 @@ export default function ProgramsPage() {
           <div className="grid gap-4 md:grid-cols-2">
             <Card className="border-primary/50">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold">Solar Cleaner Training</h3>
+                <h3 className="text-xl font-bold">Solar Foundation Course</h3>
                 <div className="mt-2 text-3xl font-bold text-primary">1 Week</div>
-                <p className="mt-2 text-sm text-muted-foreground">Entry-level solar maintenance</p>
+                <p className="mt-2 text-sm text-muted-foreground">Foundation-level solar training</p>
               </CardContent>
             </Card>
             <Card className="border-primary/50">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold">Solar Technician Training</h3>
+                <h3 className="text-xl font-bold">Solar Masters Course</h3>
                 <div className="mt-2 text-3xl font-bold text-primary">2 Weeks</div>
                 <p className="mt-2 text-sm text-muted-foreground">Advanced installation & electrical</p>
               </CardContent>
@@ -58,8 +58,8 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Solar Cleaner Training Details */}
-      <section id="cleaner" className="scroll-mt-20 py-16 lg:py-24">
+      {/* Solar Foundation Course Details */}
+      <section id="foundation" className="scroll-mt-20 py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Image */}
@@ -67,7 +67,7 @@ export default function ProgramsPage() {
               <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src="/worker-cleaning-solar-panels.jpg"
-                  alt="Solar cleaner training"
+                  alt="Solar foundation course"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent" />
@@ -81,10 +81,13 @@ export default function ProgramsPage() {
                 <span>1 Week Program</span>
               </div>
 
-              <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Solar Cleaner Training</h2>
+              <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
+                Solar Foundation Course
+              </h2>
+
               <p className="mt-4 text-lg text-muted-foreground">
-                Master the essential skills of solar panel cleaning and maintenance. This program is perfect for those
-                looking to start a career in solar energy with minimal prior experience.
+                Build a strong foundation in solar energy by learning essential concepts,
+                safety practices, and field-level skills. Ideal for beginners.
               </p>
 
               <div className="mt-8 space-y-6">
@@ -95,12 +98,12 @@ export default function ProgramsPage() {
                   </h3>
                   <ul className="space-y-3">
                     {[
-                      "Professional solar panel cleaning techniques",
+                      "Solar basics and system overview",
+                      "Professional panel cleaning techniques",
                       "Safety protocols and equipment usage",
                       "Tools and materials identification",
-                      "Maintenance schedules and best practices",
+                      "Maintenance best practices",
                       "On-site practical training sessions",
-                      "Quality control and inspection methods",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
@@ -118,13 +121,13 @@ export default function ProgramsPage() {
                   <div className="grid gap-4 sm:grid-cols-2">
                     {[
                       { icon: FileCheck, text: "Industry Certificate" },
-                      { icon: Briefcase, text: "Job Assistance" },
+                      { icon: Briefcase, text: "Job Assistance*" },
                       { icon: Users, text: "Expert Trainers" },
                       { icon: Shield, text: "Safety Training" },
                     ].map((benefit, i) => (
                       <Card key={i}>
                         <CardContent className="flex items-center gap-3 p-4">
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                             <benefit.icon className="h-5 w-5" />
                           </div>
                           <span className="text-sm font-medium">{benefit.text}</span>
@@ -137,13 +140,13 @@ export default function ProgramsPage() {
                 <div className="rounded-lg border border-border bg-muted/30 p-6">
                   <h4 className="mb-2 font-semibold">Prerequisites</h4>
                   <p className="text-sm text-muted-foreground">
-                    No prior experience required. Basic physical fitness and willingness to work at heights.
+                    No prior experience required. Basic physical fitness recommended.
                   </p>
                 </div>
 
                 <Link href="/register">
                   <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto">
-                    Register for Solar Cleaner Training
+                    Register for Solar Foundation Course
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -156,8 +159,8 @@ export default function ProgramsPage() {
       {/* Divider */}
       <div className="border-t border-border" />
 
-      {/* Solar Technician Training Details */}
-      <section id="technician" className="scroll-mt-20 bg-muted/30 py-16 lg:py-24">
+      {/* Solar Masters Course Details */}
+      <section id="masters" className="scroll-mt-20 bg-muted/30 py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Content */}
@@ -167,10 +170,13 @@ export default function ProgramsPage() {
                 <span>2 Week Program</span>
               </div>
 
-              <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Solar Technician Training</h2>
+              <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
+                Solar Masters Course
+              </h2>
+
               <p className="mt-4 text-lg text-muted-foreground">
-                Comprehensive training program covering solar panel installation, electrical wiring, inverter setup, and
-                complete system maintenance. Ideal for those seeking advanced technical skills.
+                Advanced solar training covering installation, electrical wiring,
+                inverter setup, troubleshooting, and complete system maintenance.
               </p>
 
               <div className="mt-8 space-y-6">
@@ -181,14 +187,12 @@ export default function ProgramsPage() {
                   </h3>
                   <ul className="space-y-3">
                     {[
-                      "Solar panel installation and mounting systems",
-                      "Electrical wiring and circuit connections",
-                      "Inverter installation and configuration",
+                      "Solar panel installation & mounting systems",
+                      "Electrical wiring and inverter configuration",
                       "Battery storage system setup",
-                      "Site survey and planning techniques",
-                      "System troubleshooting and maintenance",
-                      "Safety regulations and compliance",
-                      "Load calculation and system sizing",
+                      "Site survey & system planning",
+                      "Troubleshooting & maintenance",
+                      "Safety compliance & regulations",
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
@@ -206,13 +210,13 @@ export default function ProgramsPage() {
                   <div className="grid gap-4 sm:grid-cols-2">
                     {[
                       { icon: FileCheck, text: "Professional Certificate" },
-                      { icon: Briefcase, text: "Job Placement Support" },
+                      { icon: Briefcase, text: "Job Assistance*" },
                       { icon: Wrench, text: "Hands-On Experience" },
                       { icon: Users, text: "Industry Mentorship" },
                     ].map((benefit, i) => (
                       <Card key={i}>
                         <CardContent className="flex items-center gap-3 p-4">
-                          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                             <benefit.icon className="h-5 w-5" />
                           </div>
                           <span className="text-sm font-medium">{benefit.text}</span>
@@ -225,17 +229,20 @@ export default function ProgramsPage() {
                 <div className="rounded-lg border border-border bg-card p-6">
                   <h4 className="mb-2 font-semibold">Prerequisites</h4>
                   <p className="text-sm text-muted-foreground">
-                    Basic understanding of electrical concepts recommended. Experience in electrical or construction
-                    work is beneficial but not mandatory.
+                    Basic electrical knowledge recommended. Field experience is beneficial but not mandatory.
                   </p>
                 </div>
 
                 <Link href="/register">
                   <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto">
-                    Register for Solar Technician Training
+                    Register for Solar Masters Course
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
+
+                <p className="text-xs text-muted-foreground">
+                  *Job assistance for top candidates post evaluation
+                </p>
               </div>
             </div>
 
@@ -244,7 +251,7 @@ export default function ProgramsPage() {
               <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src="/solar-technician-installing-panels-wiring.jpg"
-                  alt="Solar technician training"
+                  alt="Solar masters course training"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/40 to-transparent" />
@@ -262,7 +269,7 @@ export default function ProgramsPage() {
               Our <span className="text-primary">Training Process</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              A structured approach to ensure you gain both theoretical knowledge and practical expertise
+              A structured approach to ensure both theoretical knowledge and practical expertise
             </p>
           </div>
 
@@ -285,8 +292,8 @@ export default function ProgramsPage() {
               },
               {
                 step: "04",
-                title: "Certification & Placement",
-                description: "Receive certificate and get job placement assistance",
+                title: "Certification & Job Assistance",
+                description: "Receive certificate and job assistance post evaluation",
               },
             ].map((item, i) => (
               <Card key={i} className="relative overflow-hidden">
@@ -298,13 +305,19 @@ export default function ProgramsPage() {
               </Card>
             ))}
           </div>
+
+          <p className="mt-6 text-center text-xs text-muted-foreground">
+            *Job assistance for top candidates post evaluation
+          </p>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="bg-secondary py-16 text-secondary-foreground">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
+            Ready to Get Started?
+          </h2>
           <p className="mx-auto mt-4 max-w-2xl text-secondary-foreground/90">
             Register today and take the first step towards a rewarding career in solar energy
           </p>

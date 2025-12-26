@@ -5,7 +5,18 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { StatCounter } from "@/components/stat-counter"
 import { FloatingCTA } from "@/components/floating-cta"
-import { CheckCircle2, Award, Briefcase, Users, Zap, Shield, GraduationCap, Phone, ArrowRight, Sun } from "lucide-react"
+import {
+  CheckCircle2,
+  Award,
+  Briefcase,
+  Users,
+  Zap,
+  Shield,
+  GraduationCap,
+  Phone,
+  ArrowRight,
+  Sun,
+} from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -18,7 +29,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-slate-700/25" />
         <div className="container relative mx-auto px-4 py-16 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
-            {/* Left Content */}
             <div className="flex flex-col justify-center space-y-8">
               <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
                 <Sun className="h-4 w-4" />
@@ -29,12 +39,18 @@ export default function HomePage() {
                 <h1 className="text-balance text-4xl font-bold tracking-tight lg:text-6xl">
                   Build Your Career in <span className="text-primary">Solar Energy</span>
                 </h1>
+
                 <p className="text-pretty text-lg text-muted-foreground lg:text-xl">
-                  Professional Solar Training • Industry Certification • Job Support
+                  Professional Solar Training • Industry Certification • Job Assistance*
                 </p>
+
                 <p className="text-pretty text-muted-foreground">
-                  Join Smartroof Solar Solutions and become a certified solar professional. Learn from industry experts
-                  with hands-on training and guaranteed job assistance.
+                  Join Smartroof Solar Solutions and become a certified solar professional.
+                  Learn from industry experts with hands-on training and Job Assistance*.
+                </p>
+
+                <p className="text-xs text-muted-foreground">
+                  *Job assistance for top candidates post evaluation
                 </p>
               </div>
 
@@ -53,7 +69,6 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* Trust Indicators */}
               <div className="flex flex-wrap gap-6 pt-4">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary" />
@@ -65,12 +80,12 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary" />
-                  <span className="text-sm font-medium">Job Assistance</span>
+                  <span className="text-sm font-medium">Job Assistance*</span>
                 </div>
               </div>
             </div>
 
-            {/* Right Content - Hero Image */}
+            {/* Hero Image */}
             <div className="relative">
               <div className="relative aspect-square overflow-hidden rounded-2xl lg:aspect-auto lg:h-full">
                 <img
@@ -80,7 +95,6 @@ export default function HomePage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent" />
 
-                {/* Floating Stats Card */}
                 <Card className="absolute bottom-6 left-6 right-6 border-0 bg-card/95 backdrop-blur-sm">
                   <CardContent className="p-4">
                     <div className="grid grid-cols-3 gap-4 text-center">
@@ -159,8 +173,8 @@ export default function HomePage() {
               },
               {
                 icon: Briefcase,
-                title: "Job Assistance",
-                description: "Get placement support and job connections with leading solar companies.",
+                title: "Job Assistance*",
+                description: "Placement guidance and industry connections.",
               },
               {
                 icon: Shield,
@@ -184,6 +198,10 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+
+          <p className="mt-6 text-center text-xs text-muted-foreground">
+            *Job assistance for top candidates post evaluation
+          </p>
         </div>
       </section>
 
@@ -200,12 +218,12 @@ export default function HomePage() {
           </div>
 
           <div className="grid gap-8 lg:grid-cols-2">
-            {/* Solar Cleaner Training */}
+            {/* Solar Foundation Course */}
             <Card className="group overflow-hidden transition-all hover:shadow-xl hover:border-primary/50">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/worker-cleaning-solar-panels.jpg"
-                  alt="Solar panel cleaning"
+                  alt="Solar foundation course"
                   className="h-full w-full object-cover transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
@@ -214,9 +232,9 @@ export default function HomePage() {
                 </div>
               </div>
               <CardContent className="p-6">
-                <h3 className="mb-3 text-2xl font-bold">Solar Cleaner Training</h3>
+                <h3 className="mb-3 text-2xl font-bold">Solar Foundation Course</h3>
                 <p className="mb-4 text-muted-foreground">
-                  Learn professional solar panel cleaning techniques, safety protocols, and maintenance best practices.
+                  Learn solar basics, safety practices, panel cleaning techniques, and field fundamentals.
                 </p>
                 <ul className="mb-6 space-y-2">
                   {[
@@ -232,7 +250,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/programs#cleaner">
+                <Link href="/programs#foundation">
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -241,12 +259,12 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            {/* Solar Technician Training */}
+            {/* Solar Masters Course */}
             <Card className="group overflow-hidden transition-all hover:shadow-xl hover:border-primary/50">
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/solar-technician-installing-panels-wiring.jpg"
-                  alt="Solar panel installation"
+                  alt="Solar masters course"
                   className="h-full w-full object-cover transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
@@ -255,9 +273,9 @@ export default function HomePage() {
                 </div>
               </div>
               <CardContent className="p-6">
-                <h3 className="mb-3 text-2xl font-bold">Solar Technician Training</h3>
+                <h3 className="mb-3 text-2xl font-bold">Solar Masters Course</h3>
                 <p className="mb-4 text-muted-foreground">
-                  Comprehensive training in solar panel installation, wiring, inverter setup, and system maintenance.
+                  Advanced training in solar panel installation, wiring, inverters, and system maintenance.
                 </p>
                 <ul className="mb-6 space-y-2">
                   {[
@@ -265,7 +283,7 @@ export default function HomePage() {
                     "Electrical wiring & inverters",
                     "Site survey & planning",
                     "System maintenance",
-                    "Certificate + job support",
+                    "Certificate + job assistance*",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm">
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-primary" />
@@ -273,7 +291,7 @@ export default function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href="/programs#technician">
+                <Link href="/programs#masters">
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -281,14 +299,6 @@ export default function HomePage() {
                 </Link>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="mt-8 text-center">
-            <Link href="/programs">
-              <Button size="lg" variant="outline">
-                View All Programs
-              </Button>
-            </Link>
           </div>
         </div>
       </section>

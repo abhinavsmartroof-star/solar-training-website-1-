@@ -40,10 +40,15 @@ export function Footer() {
                 </svg>
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold leading-none tracking-tight">Smartroof</span>
-                <span className="text-xs text-muted-foreground">Solar Solutions</span>
+                <span className="text-lg font-bold leading-none tracking-tight">
+                  Smartroof
+                </span>
+                <span className="text-xs text-muted-foreground">
+                  Solar Solutions
+                </span>
               </div>
             </div>
+
             <p className="text-sm text-muted-foreground">
               Professional solar training and certification for a sustainable future.
             </p>
@@ -54,22 +59,34 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  href="/"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/programs" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  href="/programs"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Training Programs
                 </Link>
               </li>
               <li>
-                <Link href="/certificate" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  href="/certificate"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Certificate & Jobs
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link
+                  href="/contact"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   Contact Us
                 </Link>
               </li>
@@ -81,16 +98,19 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold">Training Programs</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/programs#cleaner" className="text-muted-foreground transition-colors hover:text-primary">
-                  Solar Cleaner Training
+                <Link
+                  href="/programs#foundation"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                  Solar Foundation Course
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/programs#technician"
+                  href="/programs#masters"
                   className="text-muted-foreground transition-colors hover:text-primary"
                 >
-                  Solar Technician Training
+                  Solar Masters Course
                 </Link>
               </li>
             </ul>
@@ -102,29 +122,37 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 shrink-0 text-primary" />
-                <span className="text-muted-foreground">Unitech Cyber Park, Gurgaon, Haryana</span>
+                <span className="text-muted-foreground">
+                  Unitech Cyber Park, Gurgaon, Haryana
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:9599474141" className="text-muted-foreground transition-colors hover:text-primary">
+                <a
+                  href="tel:9599474141"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
                   9599474141
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
                 <a
-                  href="mailto:info@smartroofsolar.com"
+                  href="mailto:enquiry@gosmartroof.com"
                   className="text-muted-foreground transition-colors hover:text-primary"
                 >
-                  info@smartroofsolar.com
+                  enquiry@gosmartroof.com
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Bottom */}
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Smartroof Solar Solutions. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Smartroof Solar Solutions. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
